@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Card from "./components/Card";
+import equilibriumImage from "./assets/images/image-equilibrium.jpg";
+import avatarImage from "./assets/images/image-avatar.png";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <main className="bg-blue-950 text-white min-h-screen flex items-center justify-center ">
+      <Card
+        imageUrl={equilibriumImage}
+        titleText="Equilibrium #3429"
+        textContent="Our Equilibrium collection promotes balance and calm."
+        daysLeft={3}
+        ETH={0.041}
+        authorImage={avatarImage}
+        authorName="Jules Wyvern"
+      />
+    </main>
+  );
 }
 
-export default App
+export default App;
