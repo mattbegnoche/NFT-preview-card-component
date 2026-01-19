@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
-/* Variable collection - Mode 1 */
+@font-face {
+  font-family: Outfit;
+  src: url("./assets//fonts/Outfit-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
@@ -9,4 +15,8 @@
   --color-blue-800: rgba(46, 64, 90, 1);
   --color-blue-900: rgba(21, 38, 63, 1);
   --color-blue-950: rgba(13, 25, 44, 1);
+}
+
+body {
+  font-family: "Outfit";
 }
